@@ -58,12 +58,12 @@ var map = new ol.Map({
     overlays: [overlayPopup],
     layers: layersList,
     view: new ol.View({
-         maxZoom: 28, minZoom: 9
+         maxZoom: 28, minZoom: 10
     })
 });
 
 
-map.getView().fit([-20037508.342789, -20037508.342789, 20037508.342789, 20037508.342789], map.getSize());
+map.getView().fit([249690.350589, 6244324.013069, 272685.161415, 6258540.826803], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
@@ -212,7 +212,7 @@ var onPointerMove = function(evt) {
                     highlightStyle = new ol.style.Style({
                         image: new ol.style.Circle({
                             fill: new ol.style.Fill({
-                                color: "#ffff00"
+                                color: "#f32119"
                             }),
                             radius: radius
                         })
@@ -223,7 +223,7 @@ var onPointerMove = function(evt) {
 
                     highlightStyle = new ol.style.Style({
                         stroke: new ol.style.Stroke({
-                            color: '#ffff00',
+                            color: '#f32119',
                             lineDash: null,
                             width: featureWidth
                         })
@@ -232,7 +232,7 @@ var onPointerMove = function(evt) {
                 } else {
                     highlightStyle = new ol.style.Style({
                         fill: new ol.style.Fill({
-                            color: '#ffff00'
+                            color: '#f32119'
                         })
                     })
                 }

@@ -23,7 +23,7 @@ var lyr_espaces_verts_1 = new ol.layer.Vector({
                 declutter: true,
                 source:jsonSource_espaces_verts_1, 
                 style: style_espaces_verts_1,
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/espaces_verts_1.png" /> espaces_verts'
             });
 var format_LaboratoirestestHIV_2 = new ol.format.GeoJSON();
@@ -62,13 +62,10 @@ var features_Toilettespubliques_4 = format_Toilettespubliques_4.readFeatures(jso
 var jsonSource_Toilettespubliques_4 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Toilettespubliques_4.addFeatures(features_Toilettespubliques_4);cluster_Toilettespubliques_4 = new ol.source.Cluster({
-  distance: 10,
-  source: jsonSource_Toilettespubliques_4
-});
+jsonSource_Toilettespubliques_4.addFeatures(features_Toilettespubliques_4);
 var lyr_Toilettespubliques_4 = new ol.layer.Vector({
                 declutter: true,
-                source:cluster_Toilettespubliques_4,
+                source:jsonSource_Toilettespubliques_4,
 maxResolution:28004.466152261964,
  
                 style: style_Toilettespubliques_4,
